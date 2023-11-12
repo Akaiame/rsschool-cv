@@ -1,0 +1,303 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth; 
+}
+
+body { 
+    font-family: "Verdana", sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #4d2323;
+    min-height: 100vh;
+    margin: 0; padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+body h1,h2 {
+    font-family: 'Teko', sans-serif;
+}
+
+pre {
+    white-space: pre-line;
+    word-wrap: break-word;
+    text-align: justify;
+    border: 1px solid;
+    padding: 0 8px;
+    box-shadow: 10px 5px 5px rgba(143, 245, 250, 0.896);
+}
+
+@media (max-width: 768px) {
+    .section {
+      width: 100%;
+    }
+    .container {
+        flex-direction: column;
+    }
+    .navbar__list {
+        flex-direction: column;
+    }
+    .footer__container {
+        flex-direction: column;
+    }
+    .footer__container img {
+        width: 100%;
+        height: 100%;
+    }  
+}
+
+.header {
+    background-color: #81b6ac;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+}
+
+.navbar__list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.navbar__link {
+    padding: 0 20px;
+    line-height: 50px;
+}
+
+.navbar__item a {
+    text-decoration: none;
+    transition: .3s;
+    color: #feffff;
+}
+
+.navbar__item a:hover {
+    color: #011517d5;
+}
+
+.main {
+    background-color: burlywood;
+}
+
+.about-me {
+    text-align: center;
+}
+
+.footer {
+    background-color: #81b6ac;
+}
+
+.footer__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer__container div{
+    padding: 0 2%;
+}
+
+.footer__container a {
+    text-decoration: none;
+}
+
+.footer-git__logo {
+    max-width: 250px;
+    max-height: 250px;
+}
+
+.footer-rss__logo {
+    max-width: 150px;
+    max-height:  170px;
+}
+
+.main-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+pre {
+    font-weight: 900;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 16px auto;
+}
+
+  .container h1 {
+    text-align: center;
+}
+
+.section {
+    width: 50%;
+    padding: 0 30px;
+}
+
+  .section-title {
+    margin: 16px 0px;
+}
+
+  .contacts-info {
+  margin: 0;
+  padding: 0;
+}
+
+.contacts-info a {
+    text-decoration: none;
+}
+
+.contacts__list {
+    list-style: none;
+}
+
+.education__list {
+    list-style: none;
+}
+
+.education__item {
+    padding: 8px 0;
+}
+
+.avatar {
+    display: flex;
+    justify-content: center;
+    margin-left: 25%;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 50%;
+}
+
+.bold {
+    font-weight: 900;
+}
+
+.progress__bar {
+    align-items: center;
+    justify-content: center;
+}
+
+.skills h3 {
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-top: 40px;
+    margin-bottom: 5px;
+    color: #964e0f;
+    font-size: 16px;
+}
+
+.progress__line {
+    background: #959595;
+    max-width: 600px;
+    height: 10px;
+    border-radius: 5px;
+}
+
+.progress__line div {
+    height: 10px;
+    border-radius: 5px;
+    width: 0%;
+}
+
+.purple {
+    color: rgb(142, 2, 193);
+}
+pre span {
+    color: rgb(231, 6, 88);
+}
+
+.progress__line div span {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background: burlywood;
+    float: right;
+    margin-top: -15px;
+    margin-right: -20px;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.html {
+    background: #e06117;
+    animation: html 1s linear forwards;
+}
+
+.css {
+    background: #3897df;
+    animation: css 1s linear forwards;
+}
+
+.js {
+    background: #fafa09;
+    animation: js 1s linear forwards;
+}
+
+.git {
+    background: #d51616;
+    animation: git 1s linear forwards;
+}
+
+.github {
+    background: #3c3636;
+    animation: github 1s linear forwards;
+}
+
+.html span {
+    border: 1px solid #e06117; 
+}
+
+.css span {
+    border: 1px solid #3897df; 
+}
+
+.js span {
+    border: 1px solid #fafa09;
+}
+
+.git span {
+    border: 1px solid #d51616; 
+}
+
+.github span {
+    border: 1px solid #3c3636;
+}
+
+@keyframes html {
+    100%{
+        width: 80%;
+    }
+}
+
+@keyframes css {
+    100%{
+        width: 63%;
+    }
+}
+
+@keyframes js {
+    100%{
+        width: 50%;
+    }
+}
+
+@keyframes git {
+    100%{
+        width: 90%;
+    }
+}
+
+@keyframes github {
+    100%{
+        width: 96%;
+    }
+}
